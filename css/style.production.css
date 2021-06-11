@@ -342,3 +342,7 @@ button:hover, button:focus,
   -webkit-animation: 10s building-color-change-2 infinite alternate linear;
           animation: 10s building-color-change-2 infinite alternate linear;
 }
+
+.social-media a {
+  text-decoration: none;
+}
