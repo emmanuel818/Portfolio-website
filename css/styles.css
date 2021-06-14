@@ -18,6 +18,7 @@ Secondary Color (Orange): #e0b354;
   --visited-link-color: #022736;
 }
 
+
 body {
   background-color: var(--bg-color);
   font-family: 'Lato',sans-serif;
@@ -65,6 +66,7 @@ table.center {
   text-align: center;
 }
 
+
 a {
   color: var(--primary-color);
 }
@@ -103,8 +105,8 @@ a color in the RGBA format */
   transition: 0.2s opacity;
 }
 
-button:hover, button:focus,
-.button:hover,
+button:hover button:focus
+.button:hover
 .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
@@ -124,7 +126,7 @@ button:hover, button:focus,
 
 
 .page-header__item {
-  flex: 0, 1, 200px;
+  flex: 0 1 200px;
   text-align: left;
 }
 
@@ -317,4 +319,9 @@ button:hover, button:focus,
     text-align: center;
     margin:auto;
   }
+}
+
+.miami-image {
+  border-radius: 50px;
+  border-style: hidden;
 }
