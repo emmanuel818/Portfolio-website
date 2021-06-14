@@ -272,3 +272,7 @@ button:hover, button:focus,
 #path11866 {
   animation: 10s building-color-change-2 infinite alternate linear;
 }
+
+.social-media a {
+  text-decoration: none;
+}
