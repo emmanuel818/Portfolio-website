@@ -343,3 +343,35 @@ button:hover, button:focus,
 .social-media a {
   text-decoration: none;
 }
+
+@media all and (max-width: 500px) {
+  .profile {
+    float: none;
+    text-align: center;
+    margin:auto;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .profile__portrait {
+    float: none;
+    text-align: center;
+    margin: 40px 40px 40px 40px;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 768px) {
+  .profile {
+    float: none;
+    text-align: center;
+    margin:auto;
+  }
+}
+
+@media all and (min-width: 500px) and (max-width: 768px){
+  .profile__portrait {
+    float: none;
+    text-align: center;
+    margin: 40px 40px 40px 40px;
+  }
+}
