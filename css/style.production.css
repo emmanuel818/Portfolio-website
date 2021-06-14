@@ -375,3 +375,8 @@ button:hover, button:focus,
     margin: 40px 40px 40px 40px;
   }
 }
+
+.miami-image {
+  border-radius: 50px;
+  border-style: hidden;
+}
