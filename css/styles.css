@@ -85,7 +85,7 @@ a:active {
   color: #489c79;
 }
 
-button, a.button  {
+button, a.button, input.button  {
   /*overwrites browser defaults and resets borders */
   border: none;
   display: inline-block;
@@ -101,13 +101,12 @@ button, a.button  {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and
 a color in the RGBA format */
-  border-bottom:  2px solid rgba (0,0,0,0.3);
+  border-bottom:  2px solid black rgba (0,0,0,0.3);
   transition: 0.2s opacity;
 }
 
-button:hover button:focus
-.button:hover
-.button:focus {
+button:hover; button:focus;
+  .button:hover .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /*reduces the opacity of the button by 80% */
@@ -324,4 +323,49 @@ button:hover button:focus
 .miami-image {
   border-radius: 50px;
   border-style: hidden;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#contact-form {
+  width: 500px;
+  display: flex;
+  flex-wrap:wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-email {
+  width: 500px;
+  border-style:solid;
+  text-align: center;
+  background-color: inherit;
+  border-color: black;
+}
+
+#contact-telephone {
+  width: 500px;
+  border-style:solid;
+  text-align: center;
+  background-color: inherit;
+  border-color: black;
+}
+
+#contact-message {
+  width: 500px;
+  height: 200px;
+  border-style:solid;
+  background-color: inherit;
+  border-color: black;
+}
+
+.standard-label {
+  font-weight: bold;
 }

@@ -11,8 +11,17 @@ Secondary Color (Orange): #e0b354;
           box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #00675c;
+  --secondary-color: #e0b354;
+  --bg-color: #bbeeee;
+  --paragraph-font-size: 18px;
+  --visited-link-color: #022736;
+}
+
+
 body {
-  background-color: #bbeeee;
+  background-color: var(--bg-color);
   font-family: 'Lato',sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -26,7 +35,7 @@ h1 {
 }
 
 p {
-  font-size: 18px;
+  font-size: var(--paragraph-font-size);
   }
 
 .headings {
@@ -73,13 +82,14 @@ table.center {
   text-align: center;
 }
 
+
 a {
-  color: #00675c;
+  color: var(--primary-color);
 }
 
 a:visited {
   /*visited link */
-  color: #022736;
+  color: var(--visited-link-color);
 }
 a:hover, a:focus {
   /* No underlining when hovering over a link */
@@ -91,7 +101,7 @@ a:active {
   color: #489c79;
 }
 
-button, a.button  {
+button, a.button, input.button  {
   /*overwrites browser defaults and resets borders */
   border: none;
   display: inline-block;
@@ -107,14 +117,15 @@ button, a.button  {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and
 a color in the RGBA format */
-  border-bottom:  2px solid black rgba (0,0,0,0.3);
+  border-bottom:  2px solid rgba (0,0,0,0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
 button:hover; button:focus;
-.button:hover; .button:focus; {
+  .button:hover;
+  .button:focus; {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /*reduces the opacity of the button by 80% */
@@ -128,7 +139,7 @@ button:hover; button:focus;
   display: flex;
   width: 100%;
   padding: 20px;
-  margin:auto;
+  margin: auto;
   border-bottom: 2px solid black;
   background-color: #95bebe;
 }
@@ -163,7 +174,7 @@ button:hover; button:focus;
 
 
 
-.page-footer  {
+.page-footer {
   clear:both;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -174,6 +185,7 @@ button:hover; button:focus;
           flex-direction: column;
   text-align: center;
   padding: 50px ;
+
 }
 
 
@@ -375,8 +387,80 @@ button:hover; button:focus;
   }
 }
 
+@media all and (min-width: 500px) {
+  .about-me-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    margin:auto;
+  }
+}
 
 .miami-image {
   border-radius: 50px;
   border-style: hidden;
+}
+
+.contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+#contact-form {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap:wrap;
+      flex-wrap:wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact-email {
+  width: 500px;
+  border-style:solid;
+  text-align: center;
+  background-color: inherit;
+  border-color: black;
+}
+
+#contact-telephone {
+  width: 500px;
+  border-style:solid;
+  text-align: center;
+  background-color: inherit;
+  border-color: black;
+}
+
+#contact-message {
+  width: 500px;
+  height: 200px;
+  border-style:solid;
+  background-color: inherit;
+  border-color: black;
+}
+
+.standard-label {
+  font-weight: bold;
 }
