@@ -6,22 +6,22 @@ Primary Color (Green): #357b70;
 Secondary Color (Orange): #e0b354;
 */
 
+/*Colors used
+
+background color (skyblue): #bbeeee;
+Link Color: #00675c;
+Primary Color (Green): #357b70;
+Secondary Color (Orange): #e0b354;
+*/
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-:root {
-  --primary-color: #00675c;
-  --secondary-color: #e0b354;
-  --bg-color: #bbeeee;
-  --paragraph-font-size: 18px;
-  --visited-link-color: #022736;
-}
-
 
 body {
-  background-color: var(--bg-color);
+  background-color: #bbeeee;
   font-family: 'Lato',sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -35,7 +35,7 @@ h1 {
 }
 
 p {
-  font-size: var(--paragraph-font-size);
+  font-size: 18px;
   }
 
 .headings {
@@ -84,12 +84,12 @@ table.center {
 
 
 a {
-  color: var(--primary-color);
+  color: #00675c;
 }
 
 a:visited {
   /*visited link */
-  color: var(--visited-link-color);
+  color: #022736;
 }
 a:hover, a:focus {
   /* No underlining when hovering over a link */
@@ -117,20 +117,20 @@ button, a.button, input.button  {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and
 a color in the RGBA format */
-  border-bottom:  2px solid rgba (0,0,0,0.3);
+  border-bottom:  2px solid rgba(0,0,0,0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
 
-button:hover; button:focus;
-  .button:hover;
-  .button:focus; {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /*reduces the opacity of the button by 80% */
-  opacity: 0.8;
-}
+button:hover button:focus
+  .button:hover
+  .button:focus {
+    /* lets the mouse appear as a hand when hovering over the button */
+    cursor: pointer;
+    /*reduces the opacity of the button by 80% */
+    opacity: 0.8;
+  }
 
 
 .page-header {
@@ -401,7 +401,6 @@ button:hover; button:focus;
   border-radius: 50px;
   border-style: hidden;
 }
-
 .contact-box {
   display: -webkit-box;
   display: -ms-flexbox;

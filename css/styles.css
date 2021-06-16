@@ -101,12 +101,13 @@ button, a.button, input.button  {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and
 a color in the RGBA format */
-  border-bottom:  2px solid black rgba (0,0,0,0.3);
+  border-bottom:  2px solid rgba(0,0,0,0.3);
   transition: 0.2s opacity;
 }
 
-button:hover; button:focus;
-  .button:hover .button:focus {
+button:hover button:focus
+  .button:hover
+  .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /*reduces the opacity of the button by 80% */
