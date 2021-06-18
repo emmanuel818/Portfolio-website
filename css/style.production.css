@@ -492,10 +492,3 @@ button:hover, button:focus,
    width: 50%;
   }
 }
-
-@media all and (max-width: 500px) {
-  #svg9 {
-    width: 100%;
-    height: auto;
-  }
-}
