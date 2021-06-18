@@ -465,7 +465,7 @@ button:hover, button:focus,
 }
 
 @media all and (max-width: 500px) {
-  #contact-email {
+  #contact-form {
     width: 200px;
   }
 }
