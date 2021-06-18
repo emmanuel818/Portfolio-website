@@ -463,3 +463,9 @@ button:hover, button:focus,
 .standard-label {
   font-weight: bold;
 }
+
+@media all and (max-width: 500px) {
+  #contact-email {
+    width: 200px;
+  }
+}
