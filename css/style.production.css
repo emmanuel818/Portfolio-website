@@ -463,12 +463,3 @@ button:hover, button:focus,
 .standard-label {
   font-weight: bold;
 }
-
-@media all and (max-width: 500px) {
-  .about-me-main {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
