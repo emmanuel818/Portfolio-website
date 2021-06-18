@@ -466,24 +466,24 @@ button:hover, button:focus,
 
 @media all and (max-width: 500px) {
   #contact-form {
-    width: 200px;
+    width: 300px;
   }
 }
 
 @media all and (max-width: 500px) {
   #contact-email {
-    width: 200px;
+    width: 300px;
   }
 }
 
 @media all and (max-width: 500px) {
   #contact-telephone {
-    width: 200px;
+    width: 300px;
   }
 }
 @media all and (max-width: 500px) {
   #contact-message {
-    width: 200px;
+    width: 300px;
   }
 }
 
