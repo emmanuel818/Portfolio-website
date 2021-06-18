@@ -489,12 +489,12 @@ button:hover, button:focus,
 
 @media all and (max-width: 500px) {
   table.center {
-    width: 50%;
+    width: 70%;
   }
 }
 
 @media all and (max-width: 500px) {
   .about-me-main {
-   margin: 40px;
+   width: 70%;
   }
 }
