@@ -105,8 +105,8 @@ a color in the RGBA format */
   transition: 0.2s opacity;
 }
 
-button:hover button:focus
-  .button:hover
+button:hover, button:focus,
+  .button:hover,
   .button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
@@ -221,7 +221,7 @@ button:hover button:focus
 }
 @media all and (max-width: 750px) {
   .project-list {
-    grid-gap: 10px;
+  grid-gap: 10px;
   }
   .project-list__item:last-child {
     grid-column: auto / auto;

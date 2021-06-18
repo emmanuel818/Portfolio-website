@@ -123,8 +123,8 @@ a color in the RGBA format */
   transition: 0.2s opacity;
 }
 
-button:hover button:focus
-  .button:hover
+button:hover, button:focus,
+  .button:hover,
   .button:focus {
     /* lets the mouse appear as a hand when hovering over the button */
     cursor: pointer;
@@ -462,4 +462,10 @@ button:hover button:focus
 
 .standard-label {
   font-weight: bold;
+}
+
+@media all and (max-width: 500px) {
+  .about-me-main {
+    font-size: 30px;
+  }
 }
