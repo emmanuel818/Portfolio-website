@@ -490,6 +490,7 @@ button:hover, button:focus,
 @media all and (max-width: 500px) {
   table.center {
    width: 70%;
+   text-align: center;
   }
 }
 
@@ -497,5 +498,6 @@ button:hover, button:focus,
   .about-me-main {
     width: 70%;
     margin: 30px;
+    text-align: center;
   }
 }
