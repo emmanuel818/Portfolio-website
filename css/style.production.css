@@ -489,6 +489,12 @@ button:hover, button:focus,
 
 @media all and (max-width: 500px) {
   table.center {
-   width: 70%;
+   width: 50%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .miami-image {
+    width: 50%;
   }
 }
