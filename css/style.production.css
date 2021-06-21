@@ -498,10 +498,3 @@ button:hover, button:focus,
    text-align: center;
   }
 }
-
-@media all and (max-width: 500px) {
-  .miami-image {
-   width: 100%;
-   height: auto;
-  }
-}
