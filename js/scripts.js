@@ -40,7 +40,7 @@
   function validateTelephone() {
     let value = telephoneInput.value;
 
-    if(!value) {
+    if (!value) {
       showErrorMessage(telephoneInput, 'Telephone is a required field.');
       return false;
     }
@@ -56,8 +56,8 @@
 
   function validateForm() {
     let isValidEmail = validateEmail();
-    let is validateTelephone = validateTelephone();
-    return isValidEmail && isValidTelephone;
+    let isValideTelephone = validateTelephone();
+    return isValidEmail && isValideTelephone;
   }
 
   form.addEventListener('submit', (e) => {
@@ -68,5 +68,5 @@
   });
 
   emailInput.addEventListener('input', validateEmail);
-  telephoneInput.addEventListener('input',telephonePassword);
+  telephoneInput.addEventListener('input', telephonePassword);
 })();
